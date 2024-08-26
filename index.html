@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <!-- ///////////// animation link //////////////// -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- ///////// aos animation /////////// -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -34,7 +38,7 @@
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container">
                     <a class="navbar-brand d-flex flex-row align-items-center" href="#">
-                        <img src="images/My Photo.jpg" width="70px" height="auto"
+                        <img src="images/me 2.png" width="70px" height="auto"
                             class="rounded-circle border border-3 border-secondary border-opacity-50" alt="">
                         <h4 class="text-secondary ms-3 mt-3 fw-bold">ANAND KUMAR <br></h4>
                     </a>
@@ -65,14 +69,27 @@
                 </div>
             </nav>
             <div class="header-img">
-                <div class="header-img-content">
-                    <img src="images/header image.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="container header-img-content-main col-12">
-                    <div class="header-img-content-me ps-3">
-                        <h5>I'm</h5>
+                <div class="container header-img-content-main animate__animated animate__fadeInDown">
+                    <div class="header-img-content-me ps-3 col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 ">
+                        <h5>Hello I'm</h5>
                         <h2>Anand Kumar</h2>
-                        <button class="btn">Download CV <i class="fa-solid fa-arrow-down"></i></button>
+                        <!-- Element to contain animated typing -->
+                        <h3 class="fw-bold">And I'm a <span id="element"></span></h3>
+                        <p>I’m Anand Kumar, a passionate web developer with a strong background in creating dynamic and
+                            responsive websites. With expertise in both front-end and back-end technologies, I bring
+                            ideas to life by building user-friendly and functional websites. My goal is to continuously
+                            learn and adapt to the ever-changing web development landscape, ensuring that I deliver the
+                            best possible solutions for my clients and projects. Whether working on a new project or
+                            enhancing existing systems, I am committed to writing clean, efficient code and delivering
+                            high-quality results.</p>
+
+                        <p>I am always eager to take on new challenges and contribute to innovative projects. If you’re
+                            looking for a dedicated web developer to bring your vision to life, I’m here to help!</p>
+                        <a href="images/Anand's Resume.pdf" download><button class="btn">Download CV <i
+                                    class="fa-solid fa-arrow-down"></i></button></a>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 d-flex justify-content-center">
+                        <img src="images/me 2.png" width="350px" height="350px" class="my-image rounded-circle" alt="">
                     </div>
                 </div>
             </div>
@@ -86,7 +103,7 @@
         <!-- //////////////// SKILL AND EXPERIENCE  /////////////// -->
 
         <section>
-            <div class="container my-5 py-5">
+            <div class="container my-5 py-5" data-aos="zoom-in" data-aos-offset="300">
                 <div class="row">
                     <div class="col-12 fw-bold text-center mb-2">SKILLS</div>
                     <div class="col-12 fw-bold text-center mb-5">
@@ -136,11 +153,11 @@
                                     <div class="skill mb-4">
                                         <div class="d-flex justify-content-between">
                                             <h6 class="font-weight-bold">PHP</h6>
-                                            <h6 class="font-weight-bold">30%</h6>
+                                            <h6 class="font-weight-bold">50%</h6>
                                         </div>
                                         <div class="progress">
-                                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="30"
-                                                aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+                                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="50"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -190,57 +207,22 @@
                         </div>
                         <div class="col-lg-6 col-md-12 wow fadeInUp ps-4 skill-sec-box" data-wow-delay="0.5s"
                             style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-                            <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
-                                <li class="nav-item w-50">
-                                    <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill"
-                                        href="#tab-1">Experience</button>
-                                </li>
-                                <li class="nav-item w-50">
-                                    <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill"
-                                        href="#tab-2">Education</button>
-                                </li>
-                            </ul>
-                            <div class="tab-content">
-                                <div id="tab-1" class="tab-pane fade show p-0 active">
-                                    <div class="row gy-5 gx-4">
-                                        <div class="col-sm-6">
-                                            <h5>UI Designer</h5>
-                                            <hr class="text-primary my-2">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <h5>Product Designer</h5>
-                                            <hr class="text-primary my-2">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <h5>Web Designer</h5>
-                                            <hr class="text-primary my-2">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <h5>Apps Designer</h5>
-                                            <hr class="text-primary my-2">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div id="tab-2" class="tab-pane fade show p-0">
-                                    <div class="row gy-5 gx-4">
-                                        <div class="col-sm-6">
-                                            <h5>UI Design Course</h5>
-                                            <hr class="text-primary my-2">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <h5>IOS Development</h5>
-                                            <hr class="text-primary my-2">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <h5>Web Design</h5>
-                                            <hr class="text-primary my-2">
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <h5>Apps Design</h5>
-                                            <hr class="text-primary my-2">
-                                        </div>
-                                    </div>
-                                </div>
+                            <div>
+                                <h3 class="fw-bold text-white">Get to know me!</h3>
+
+                                <p>In the ever-evolving landscape of web development, I operate as a dynamic full-stack
+                                    developer who seamlessly navigates the complexities of both front-end and back-end
+                                    technologies. Check out some of my work in the Projects section.</p>
+
+                                <p>I also like to share content related to things I've learned over the years in web
+                                    development so that it can help other people in the developer community. Contact me
+                                    or
+                                    follow me on my Linkedin where I post useful content related to web development and
+                                    programming.</p>
+
+                                <p>I am open to work opportunities where I can contribute, learn and develop. If you
+                                    have a
+                                    good opportunity that matches my skills and experience, be sure to contact me.</p>
                             </div>
                         </div>
                     </div>
@@ -257,7 +239,8 @@
                     <div class="col-12">
                         <h2 class="text-center mb-5">My Projects</h2>
                     </div>
-                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <a href="https://devloper-anand.github.io/Lakshay-Computer-Cinstitute/">
                             <div class="projects-main-boxes">
                                 <div class="project-img-box">
@@ -268,13 +251,15 @@
                                 </div>
                                 <div class="project-name-btn">
                                     <a href="#">
-                                        <h4>Lakshaya Computer Institute <i class="fa-solid fa-arrow-up-right-from-square"></i></h4>
+                                        <h4>Lakshaya Computer Institute <i
+                                                class="fa-solid fa-arrow-up-right-from-square"></i></h4>
                                     </a>
                                 </div>
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <a href="https://devloper-anand.github.io/Education-Site/">
                             <div class="projects-main-boxes">
                                 <div class="project-img-box">
@@ -291,7 +276,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <a href="https://devloper-anand.github.io/NIELIT-Form/">
                             <div class="projects-main-boxes">
                                 <div class="project-img-box">
@@ -308,7 +294,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <a href="https://devloper-anand.github.io/Travel-Site/">
                             <div class="projects-main-boxes">
                                 <div class="project-img-box">
@@ -325,7 +312,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <a href="https://devloper-anand.github.io/Calculator/">
                             <div class="projects-main-boxes">
                                 <div class="project-img-box">
@@ -342,7 +330,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <a href="https://devloper-anand.github.io/My-Portfolio/">
                             <div class="projects-main-boxes">
                                 <div class="project-img-box">
@@ -359,7 +348,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <a href="#">
                             <div class="projects-main-boxes">
                                 <div class="project-img-box">
@@ -376,7 +366,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <a href="#">
                             <div class="projects-main-boxes">
                                 <div class="project-img-box">
@@ -393,7 +384,8 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                    <div class="col-12 col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-12" data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                         <a href="#">
                             <div class="projects-main-boxes">
                                 <div class="project-img-box">
@@ -417,7 +409,7 @@
         <!-- //////////////// MY RESUME  /////////////// -->
 
         <section id="resume">
-            <div class="container my-resume my-5 pt-5">
+            <div class="container my-resume my-5 pt-5" data-aos="zoom-in" data-aos-offset="300">
                 <div class="row">
                     <div class="col-12 text-center">
                         <h5>Passionste Fresher</h5>
@@ -427,8 +419,8 @@
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3">
                         <div class="list-group list-group-boxes sticky-top" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action" id="list-home-list" data-bs-toggle="list"
-                                href="#list-home" role="tab" aria-controls="list-home">About</a>
+                            <a class="list-group-item list-group-item-action active" id="list-home-list"
+                                data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">About</a>
                             <a class="list-group-item list-group-item-action" id="list-profile-list"
                                 data-bs-toggle="list" href="#list-profile" role="tab"
                                 aria-controls="list-profile">Education</a>
@@ -440,12 +432,14 @@
                                 aria-controls="list-settings">Experience</a>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9 mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0 mt-xxl-0 ">
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-9 col-xl-9 col-xxl-9 mt-5 mt-sm-5 mt-md-5 mt-lg-0 mt-xl-0 mt-xxl-0 ">
                         <div class="tab-content" id="nav-tabContent">
                             <div class="tab-pane fade show active" id="list-home" role="tabpanel"
                                 aria-labelledby="list-home-list">
                                 <div class="about-list d-flex justify-content-between">
-                                    <div class="about-list-img-box">
+                                    <div class="about-list-img-box" data-aos="flip-left"
+                                        data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                                         <img src="images/resume.jpg" class="img-fluid" alt="">
                                     </div>
                                     <div class="about-list-content-box">
@@ -464,7 +458,8 @@
                                             <li>Cross-Browser Compatibility</li>
                                             <li>PHP Programming Language</li>
                                         </ul>
-                                        <button class="btn">Download CV <i class="fa-solid fa-arrow-down"></i></button>
+                                        <a href="images/Anand's Resume.pdf" download><button class="btn">Download CV <i
+                                                    class="fa-solid fa-arrow-down"></i></button></a>
                                     </div>
                                     <h4 class="fw-bold text-white my-4 w-100 text-center">What i am Doing</h4>
                                     <div class="about-me-box">
@@ -694,7 +689,7 @@
         <!-- ///////////// contact section////////////// -->
 
         <section id="contact">
-            <div class="container mt-5 py-5">
+            <div class="container mt-5 py-5" data-aos="zoom-in" data-aos-offset="300">
                 <div class="row">
                     <div class="col-12 text-center">
                         <h5>CONTACT</h5>
@@ -704,13 +699,14 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-5 col-xx-5">
                         <div class="contact-box-1">
-                            <img src="images/hand shake.jpg" class="img-fluid" alt="">
+                            <img src="images/hand shake.jpg" class="img-fluid" alt="" data-aos="flip-left"
+                                data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                             <h3 class="fw-bold mt-3 text-white">Anand Kumar</h3>
                             <p>Front-End WebDeveloper</p>
                             <p>I am available for freelance work. Connect with me via and call in to my account.</p>
                             <p>Phone: <a href="#">+91 7254802433</a></p>
                             <p>Email: <a href="#">imdeveloperanand@gmail.com</a></p>
-                            <p>FIND ME IN</p>
+                            <p class="fw-bold">FIND ME IN</p>
                             <ul>
                                 <a href="#">
                                     <li><i class="fa-brands fa-github"></i></li>
@@ -777,7 +773,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center mb-4">
-                    <img src="images/My Photo.jpg" width="70px" height="auto"
+                    <img src="images/me 2.png" width="70px" height="auto"
                         class="rounded-circle border border-3 border-secondary border-opacity-50" alt="">
                     <h4 class="text-secondarys mt-4">ANAND KUMAR<br></h4>
                     <p class="text-secondary">© 2024. All rights reserved by
@@ -798,6 +794,37 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            Strings: ["programmer", "desffd", "egesfd"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            looped: true
+        })
+    </script>
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['A Passionate Web Developer.', 'Dedicating to Crafting.', 'Responsive Designs.', 'And Creating', 'User-Friendly UI/UX.'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+
 </body>
 
 </html>
